@@ -159,19 +159,56 @@
   .reveal.visible { opacity:1; transform:translateY(0); }
 
   @media(max-width:900px){
-    nav{padding:16px 24px;} .nav-links{display:none;}
-    section,#nosotras{padding:70px 24px;}
-    .hero{padding:100px 24px 60px;}
-    .hero-deco{display:none;}
-    .gallery-grid{grid-template-columns:1fr 1fr;}
-    #nosotras{grid-template-columns:1fr;gap:40px;}
-    footer{flex-direction:column;gap:16px;text-align:center;}
+    nav { padding:16px 24px; }
+    .nav-links { display:none; }
+    section, #nosotras { padding:70px 24px; }
+    .hero { padding:100px 24px 60px; }
+    .hero-deco { display:none; }
+    .hero h1 { font-size:clamp(2.4rem,8vw,3.5rem); }
+    .hero p { font-size:1rem; }
+    .hero-cta { flex-direction:column; gap:12px; }
+    .btn-primary, .btn-secondary { justify-content:center; text-align:center; width:100%; max-width:320px; }
+    .gallery-grid { grid-template-columns:1fr 1fr; }
+    .gallery-item.tall { grid-row:span 1; }
+    .gallery-item.tall img { min-height:200px; }
+    #nosotras { grid-template-columns:1fr; gap:40px; }
+    .why-card { padding:32px 24px; }
+    .services-grid { grid-template-columns:1fr 1fr; gap:2px; }
+    .lash-grid { grid-template-columns:1fr 1fr; gap:16px; }
+    .contact-cards { gap:12px; }
+    .contact-card { min-width:140px; padding:20px 16px; }
+    footer { flex-direction:column; gap:16px; text-align:center; padding:32px 24px; }
   }
+
   @media(max-width:600px){
-    .gallery-grid{grid-template-columns:1fr;}
-    .services-grid{grid-template-columns:1fr;}
-    .wa-float a span{display:none;}
-    .wa-float a{padding:16px;border-radius:50%;}
+    nav { padding:14px 20px; }
+    section, #nosotras { padding:60px 20px; }
+    .hero { padding:90px 20px 50px; }
+    .hero h1 { font-size:clamp(2rem,9vw,3rem); line-height:1.15; }
+    .hero-tag { font-size:0.65rem; }
+    .hero p { font-size:0.95rem; max-width:100%; }
+    .hero-cta { gap:10px; }
+    .btn-primary, .btn-secondary { padding:13px 24px; font-size:0.76rem; max-width:100%; }
+    .section-title { font-size:clamp(1.7rem,7vw,2.4rem); }
+    .section-subtitle { font-size:1rem; }
+    .services-grid { grid-template-columns:1fr; }
+    .service-card { padding:28px 20px; }
+    .gallery-grid { grid-template-columns:1fr; gap:8px; }
+    .gallery-item.tall { grid-row:span 1; }
+    .gallery-item.tall img { min-height:260px; }
+    .lash-grid { grid-template-columns:1fr; gap:14px; }
+    .lash-card { padding:28px 20px; }
+    .lash-card--cta { align-items:center; text-align:center; }
+    .why-list { gap:20px; }
+    .why-num { font-size:1.5rem; min-width:32px; }
+    .why-card { padding:28px 20px; }
+    .stats-row { gap:20px; }
+    .contact-cards { flex-direction:column; align-items:center; }
+    .contact-card { width:100%; max-width:320px; }
+    footer { padding:28px 20px; }
+    .wa-float { bottom:20px; right:16px; }
+    .wa-float a span { display:none; }
+    .wa-float a { padding:16px; border-radius:50%; }
   }
 </style>
 </head>
@@ -361,7 +398,7 @@
 
 <footer>
   <div class="logo">Alexa Nails</div>
-  <p>© 2025 Alexa Nails · Hecho con 💛 en Nezahualcoyotl</p>
+  <p>© 2025 Alexa Nails · Hecho con 💛 en CDMX</p>
   <a href="https://instagram.com/alexa_nails____" target="_blank" class="social-link">@alexa_nails____</a>
 </footer>
 
